@@ -22,7 +22,7 @@ const Header = () => {
         scrolled ? "bg-black" : "bg-transparent"
       }`}
     >
-      <div className="flex justify-between mx-36 my-8 items-center">
+      <div className="flex justify-between mx-36 my-7 items-center">
         <div className="flex flex-col justify-center ">
           <h2 className="text-[50px] leading-[40px]">NaTural </h2>
           <span className="text-center font-Mukta uppercase text-[10px] p-[3px] bg-[#991b1f] tracking-[3px] text-white">

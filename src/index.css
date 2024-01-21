@@ -1,5 +1,46 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta&family=Pirata+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .slick-list{
+    padding: 0 !important;
+    height:640px !important;
+  }
+  .slick-slide{
+    width: 100vw !important;
+    height: 640px !important;
+
+  }
+  .slick-prev:before, .slick-next:before{
+    font-size: 30px;
+    color: rgb(130 8 8);
+    
+  }
+   .slick-next{
+    top: 90%;
+    right: 15% !important;
+  }
+  .slick-prev{
+    top: 90%;
+    left: 80% !important;
+    z-index: 1
+  }
+  .ALEYKUM::before{
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    left: -15px;
+    margin-left: 20px;
+    width: 59px !important;
+    height: 1px;
+    letter-spacing: 6px;
+    background-color: red;
+  }
