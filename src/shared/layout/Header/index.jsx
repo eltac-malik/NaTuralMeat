@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HEAD_URL } from "./data";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
-
+  const { pathname } = useLocation();
+  console.log({ pathname });
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -31,11 +32,18 @@ const Header = () => {
         </div>
         <div>
           <ul className="flex gap-5 text-[25px]">
-            {HEAD_URL?.map((item) => (
-              <li className="hover:text-[#991b1f] duration-300" key={item?.id}>
-                <Link to={item?.url}>{item?.inner}</Link>
-              </li>
-            ))}
+            {HEAD_URL?.map((item) => {
+              return (
+                <li
+                  className={`hover:text-[#991b1f] duration-300 ${
+                    item.url == pathname ? "active" : ""
+                  }`}
+                  key={item?.id}
+                >
+                  <Link to={item?.url}>{item?.inner}</Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

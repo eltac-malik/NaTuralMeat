@@ -9,6 +9,8 @@
     margin: 0;
     box-sizing: border-box;
   }
+  .active{
+color: #991b1f;  }
   .slick-list{
     padding: 0 !important;
     height:640px !important;
@@ -62,5 +64,6 @@
       z-index: 1;
       
   }
+
 
   
