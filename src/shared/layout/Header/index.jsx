@@ -8,7 +8,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setScrolled(scrollTop > 200);
+      setScrolled(scrollTop > 150);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <div
       className={`font-PirateOne fixed top-0 left-0 right-0 z-50 text-white transition-all duration-300 ${
-        scrolled ? "bg-black" : "bg-transparent"
+        scrolled ? "bg-[#101010]" : "bg-transparent"
       }`}
     >
       <div className="flex justify-between mx-36 my-7 items-center">

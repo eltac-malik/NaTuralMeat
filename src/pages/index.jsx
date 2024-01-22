@@ -1,13 +1,13 @@
 import { lazy } from "react";
 import PrivateRouter from "./PrivateRouter";
-import AnimatedCursor from "react-animated-cursor";
+// import AnimatedCursor from "react-animated-cursor";
 
 const Header = lazy(() => import("shared/layout/Header"));
 
 const Router = () => {
   return (
     <>
-      <AnimatedCursor
+      {/* <AnimatedCursor
         color="220, 90, 90"
         innerStyle={{
           backgroundColor: "red",
@@ -17,7 +17,7 @@ const Router = () => {
         outerStyle={{
           border: "3px solid red",
         }}
-      />
+      /> */}
       <Header />
       <PrivateRouter />
     </>
