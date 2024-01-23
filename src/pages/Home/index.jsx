@@ -5,6 +5,12 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import Menu from "./Menu";
 import { Modal } from "@mui/material";
 import { useState } from "react";
+import { FoodBankOutlined } from "@mui/icons-material";
+import PetsIcon from "@mui/icons-material/Pets";
+import LiquorIcon from "@mui/icons-material/Liquor";
+import CoffeeIcon from "@mui/icons-material/Coffee";
+import FastfoodIcon from "@mui/icons-material/Fastfood";
+import CountrySlider from "src/shared/components/CountrySlider";
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -139,6 +145,110 @@ const Home = () => {
           >
             Recipes Book
           </button>
+        </div>
+        <div className="  bg-[#101010] py-[90px]">
+          <div className="flex flex-col gap-5 mx-32 ">
+            <span className="text-[15px] text-white font-Mukta tracking-[3px] before:inline-block before:relative before:top-[-2px] before:left-[-15px] before:ml-[20px] before:w-[59px] before:h-[1px] before:bg-red-500">
+              STEAK & WINE
+            </span>{" "}
+            <h1 className="text-[60px] font-PirateOne text-white mb-8">
+              <span className="text-red-700">Today`s </span> Menu
+            </h1>
+          </div>
+          <div className="mx-32 text-white grid grid-cols-3 gap-6">
+            <div className="bg-[#1b1b1b] p-8 todayMenu">
+              <div className="img-area">
+                {" "}
+                <FoodBankOutlined />
+              </div>
+              <div className="text-area">
+                <h1 className="text-[27px] font-PirateOne">Starters</h1>{" "}
+                <ul>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-[#1b1b1b] p-8 todayMenu">
+              <div className="img-area">
+                {" "}
+                <PetsIcon />
+              </div>
+              <div className="text-area">
+                <h1 className="text-[27px] font-PirateOne">Starters</h1>{" "}
+                <ul>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-[#1b1b1b] p-8 todayMenu">
+              <div className="img-area">
+                {" "}
+                <FoodBankOutlined />
+              </div>
+              <div className="text-area">
+                <h1 className="text-[27px] font-PirateOne">Starters</h1>{" "}
+                <ul>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-[#1b1b1b] p-8 todayMenu">
+              <div className="img-area">
+                {" "}
+                <LiquorIcon />
+              </div>
+              <div className="text-area">
+                <h1 className="text-[27px] font-PirateOne">Starters</h1>{" "}
+                <ul>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-[#1b1b1b] p-8 todayMenu">
+              <div className="img-area">
+                {" "}
+                <CoffeeIcon />
+              </div>
+              <div className="text-area">
+                <h1 className="text-[27px] font-PirateOne">Starters</h1>{" "}
+                <ul>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-[#1b1b1b] p-8 todayMenu">
+              <div className="img-area">
+                {" "}
+                <FastfoodIcon />
+              </div>
+              <div className="text-area">
+                <h1 className="text-[27px] font-PirateOne">Starters</h1>{" "}
+                <ul>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                  <p>Mozzarella Dippers ........ $27</p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[url('src/assets/imgs/banner.jpg')] bg-cover bg-center w-full bg-fixed h-96  flex   items-center brightness-50">
+          <CountrySlider />
         </div>
       </div>
       <Modal onClose={() => handleClose()} open={showModal}>

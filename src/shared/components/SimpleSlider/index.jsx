@@ -11,7 +11,7 @@ const SimpleSlider = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full simpleSlider">
       <div className="w-full overflow-hidden">
         <Slider {...settings}>
           <div>
