@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import { HOME_SLIDER } from "./data";
 
 const CountrySlider = () => {
   const settings = {
@@ -10,24 +11,20 @@ const CountrySlider = () => {
   };
 
   return (
-    <div className="w-full CountrySlider">
-      <div className="w-full overflow-hidden text-white">
+    <div className="w-full CountrySlider  !brightness-100">
+      <div className="w-full overflow-hidden text-white ">
         <Slider {...settings}>
-          <div>
-            <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-              dolor laudantium ratione nobis delectus magni esse consequuntur
-              libero facere quae a distinctio nihil debitis molestias sit odio
-              eius facilis culpa ea cumque provident, dolorem ipsum! Deserunt,
-              eveniet. Optio, magnam vitae.
-            </h1>
-          </div>
-          <div>
-            <h1>SAlam</h1>
-          </div>
-          <div>
-            <h1>SAlam</h1>
-          </div>
+          {HOME_SLIDER?.map((item) => (
+            <div key={item?.id} className="flex flex-col">
+              <h1 className="font-PirateOne text-[36px] text-[#991B1F]">
+                {item?.title}
+              </h1>
+              <h2 className="uppercase font-Mukta text-[15px] py-3">
+                {item?.country}
+              </h2>
+              <p>{item?.description}</p>
+            </div>
+          ))}
         </Slider>
       </div>
     </div>

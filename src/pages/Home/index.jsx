@@ -23,7 +23,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="absolute top-0 z-[-1] bg-[#1b1b1b] w-full    ">
+      <div className=" top-0 z-[-1] bg-[#1b1b1b] w-full    ">
         <div className="w-full  z-[-1]">
           <SimpleSlider />
           {/* <img src={naTural} alt="NaTural " /> */}
@@ -247,7 +247,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[url('src/assets/imgs/banner.jpg')] bg-cover bg-center w-full bg-fixed h-96  flex   items-center brightness-50">
+        <div className="bg-[url('src/assets/imgs/banner.jpg')] bg-cover bg-center w-full bg-fixed h-96  flex   items-center ">
           <CountrySlider />
         </div>
       </div>
