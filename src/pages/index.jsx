@@ -1,14 +1,14 @@
-import { lazy } from "react";
+import { Suspense } from "react";
 import PrivateRouter from "./PrivateRouter";
 import Footer from "src/shared/layout/Footer";
-import AnimatedCursor from "react-animated-cursor";
-
-const Header = lazy(() => import("shared/layout/Header"));
+import Header from "src/shared/layout/Header";
+import CustomSpinner from "src/shared/components/CustomSpinner";
+// import AnimatedCursor from "react-animated-cursor";
 
 const Router = () => {
   return (
-    <>
-      <AnimatedCursor
+    <Suspense fallback={<CustomSpinner />}>
+      {/* <AnimatedCursor
         color="220, 90, 90"
         innerStyle={{
           backgroundColor: "red",
@@ -18,12 +18,13 @@ const Router = () => {
         outerStyle={{
           border: "3px solid red",
         }}
-      />
+      /> */}
+
       <Header />
 
       <PrivateRouter />
-      <Footer />
-    </>
+      {/* <Footer /> */}
+    </Suspense>
   );
 };
 
