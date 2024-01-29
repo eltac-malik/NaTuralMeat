@@ -3,9 +3,15 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 const Footer = () => {
+  const icons = [
+    { icon: <FacebookIcon /> },
+    { icon: <TwitterIcon /> },
+    { icon: <InstagramIcon /> },
+    { icon: <PinterestIcon /> },
+  ];
   return (
-    <div className="bg-[#101010] text-white pt-[100px]">
-      <div className="px-36 grid grid-cols-4 gap-[70px] mb-16">
+    <div className="bg-[#101010] text-white pt-[100px] ">
+      <div className="px-36 grid grid-cols-4 gap-[70px] mb-16  max-[970px]:grid-cols-1 max-[970px]:px-3">
         <div className="">
           <h2 className="text-[50px] font-PirateOne leading-[40px]">
             NaTural{" "}
@@ -18,18 +24,14 @@ const Footer = () => {
             elit.
           </p>
           <div className="flex gap-3 mt-5">
-            <a className="  cursor-pointer border rounded-full border-[#991b1f] padding inline-block p-2 hover:border-[#ffffff] duration-500  hover:duration-500">
-              <FacebookIcon />
-            </a>
-            <a className="cursor-pointer border rounded-full border-[#991b1f] padding inline-block p-2 hover:border-[#ffffff] duration-500  hover:duration-500">
-              <TwitterIcon />
-            </a>
-            <a className="cursor-pointer border rounded-full border-[#991b1f] padding inline-block p-2 hover:border-[#ffffff] duration-500  hover:duration-500">
-              <InstagramIcon />
-            </a>
-            <a className="cursor-pointer border rounded-full border-[#991b1f] padding inline-block p-2 hover:border-[#ffffff] duration-500  hover:duration-500">
-              <PinterestIcon />
-            </a>
+            {icons?.map((icon, index) => (
+              <a
+                key={index}
+                className="  cursor-pointer border rounded-full border-[#991b1f] padding inline-block p-2 hover:border-[#ffffff] duration-500  hover:duration-500"
+              >
+                {icon?.icon}
+              </a>
+            ))}
           </div>
         </div>
         <div>
@@ -56,11 +58,13 @@ const Footer = () => {
           <p className="font-Mukta text-[15px]">Sunday: Closed</p>
         </div>
       </div>
-      <div className="border-t border-white border-dotted py-8 flex justify-between">
-        <p className="px-36 font-Mukta text-[14px]">
+      <div className=" px-36 border-t border-white border-dotted py-8 flex justify-between max-[970px]:px-3 max-[970px]:flex-col">
+        <p className=" font-Mukta text-[14px]">
           © 2022, Winta Template. All right reserved.
         </p>
-        <p className="px-36 font-Mukta text-[14px]">Terms & Conditions</p>
+        <p className=" font-Mukta text-[14px] max-[970px]:pt-5">
+          Terms & Conditions
+        </p>
       </div>
     </div>
   );

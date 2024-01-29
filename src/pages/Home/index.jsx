@@ -28,12 +28,12 @@ const Home = () => {
           <SimpleSlider />
           {/* <img src={naTural} alt="NaTural " /> */}
         </div>
-        <div className="grid grid-cols-2 mx-36 gap-8 py-[90px]">
-          <div data-aos="fade-up" className="flex flex-col gap-3">
+        <div className="grid grid-cols-2 mx-36 gap-8 py-[90px] max-[970px]:grid-cols-1 max-[970px]:mx-5">
+          <div className="flex flex-col gap-3">
             <span className="text-[15px] text-white font-Mukta tracking-[3px] before:inline-block before:relative before:top-[-2px] before:left-[-15px] before:ml-[20px] before:w-[59px] before:h-[1px] before:bg-red-500">
               STEAKHOUSE + BAR
             </span>
-            <h1 className="text-[60px] font-PirateOne text-white">
+            <h1 className="text-[60px] font-PirateOne text-white max-[970px]:">
               <span className="text-red-700">Welcome to</span> Winta
             </h1>
             <p className="text-[15px] text-white font-Mukta mb-1">
@@ -53,7 +53,7 @@ const Home = () => {
               ornare torte sempeni. Luiste scelerisque the nise duru the look.
             </p>
           </div>
-          <div data-aos="fade-up" className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-2 max-[970px]:grid-cols-1">
             <div className="w-full col-span-2 overflow-hidden">
               <img
                 className="h-[320px] w-full duration-200 hover:scale-[1.08] hover:duration-200 object-cover	"
@@ -61,14 +61,14 @@ const Home = () => {
                 alt=""
               />
             </div>
-            <div className="w-full overflow-hidden">
+            <div className="w-full overflow-hidden max-[970px]:col-span-2">
               <img
                 className="h-[200px] w-full duration-200 hover:scale-[1.08] hover:duration-200 object-cover	"
                 src={Home2}
                 alt=""
               />
             </div>
-            <div className="w-full overflow-hidden">
+            <div className="w-full overflow-hidden max-[970px]:col-span-2">
               <img
                 className="h-[200px] w-full duration-200 hover:scale-[1.08] hover:duration-200 object-cover	"
                 src={Home2}
@@ -84,19 +84,19 @@ const Home = () => {
           <Menu />
         </div>
         <div>
-          <div className="bg-[url('src/assets/imgs/banner.jpg')] bg-cover bg-center w-full bg-fixed h-96  flex   items-center relative	">
-            <div className="ml-32 hover:scale-[1.2] duration-300 hover:duration-300		opacity-[.67] hover:opacity-[1] ">
+          <div className="bg-[url('src/assets/imgs/banner.jpg')] bg-cover bg-center w-full bg-fixed h-96  flex   items-center relative 	 max-[970px]:!h-[880px]">
+            <div className="ml-32 hover:scale-[1.2] duration-300 hover:duration-300		opacity-[.67] hover:opacity-[1] max-[970px]:absolute max-[970px]:top-4  max-[970px]:ml-3   ">
               <button
                 onClick={handleClick}
                 className="p-3 bg-red-700 inline-block rounded-full "
               >
                 <PlayArrowIcon className="!w-[55px] !h-[55px] text-white" />
               </button>
+              <h1 className=" hidden font-PirateOne text-[35px] text-white max-[970px]:!block">
+                View Promo Video
+              </h1>
             </div>
-            <div
-              data-aos="fade-up"
-              className="bg-[#101010] text-white absolute right-32 top-[15%] px-12 py-20"
-            >
+            <div className="bg-[#101010] text-white absolute right-32 top-[15%] px-12 py-20 max-[970px]:top-[25%]  max-[970px]:translate-x-[14%] max-[970px]:px-12 max-[970px]:left-[-24px] max-[378px]:right-[59px]  ">
               <p className="text-[13px] font-Mukta text-center">
                 CALL FOR RESERVATIONS
               </p>
@@ -135,7 +135,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="mx-32 my-32">
+        <div className="mx-32 my-32 max-[970px]:mx-3">
           <h1 className="font-PirateOne text-white  text-[27px]">
             Want to cook something tasty? Read our best recipes.
           </h1>
@@ -146,8 +146,8 @@ const Home = () => {
             Recipes Book
           </button>
         </div>
-        <div className="  bg-[#101010] py-[90px]">
-          <div className="flex flex-col gap-5 mx-32 ">
+        <div className="  bg-[#101010] py-[90px] ">
+          <div className="flex flex-col gap-5 mx-32 max-[970px]:mx-3">
             <span className="text-[15px] text-white font-Mukta tracking-[3px] before:inline-block before:relative before:top-[-2px] before:left-[-15px] before:ml-[20px] before:w-[59px] before:h-[1px] before:bg-red-500">
               STEAK & WINE
             </span>{" "}
@@ -155,7 +155,7 @@ const Home = () => {
               <span className="text-red-700">Today`s </span> Menu
             </h1>
           </div>
-          <div className="mx-32 text-white grid grid-cols-3 gap-6">
+          <div className="mx-32 text-white grid grid-cols-3 gap-6 max-[970px]:grid-cols-1 max-[970px]:mx-3">
             <div className="bg-[#1b1b1b] p-8 todayMenu">
               <div className="img-area">
                 {" "}

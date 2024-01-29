@@ -11,6 +11,9 @@
   }
   .active{
 color: #991b1f;  }
+.header-css{
+  box-shadow: rgba(90, 89, 89, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
   .simpleSlider .slick-list{
     padding: 0 !important;
     height:640px !important;
@@ -34,6 +37,33 @@ color: #991b1f;  }
     left: 80% !important;
     z-index: 1
   }
+
+  @media only screen and (max-width: 978px) {
+    .simpleSlider .slick-slide{
+      width: 100vw !important;
+      height: 390px !important;
+  
+    }
+    .simpleSlider .slick-list{
+      padding: 0 !important;
+      height:390px !important;
+    }
+    .simpleSlider .slick-next{
+      display: none;
+    }
+    .simpleSlider .slick-prev{
+      display: none;
+    }
+    .simpleSlider .slick-arrow {
+      display: none !important;
+    }
+    .simpleSlider .slick-slide div:nth-child(1){
+      height: 100%;
+    }
+  }
+
+
+
    .ALEYKUM::before{
     content: " ";
     display: inline-block;
@@ -182,4 +212,10 @@ transition: 0.2s;
   font-size: 11px !important;
   color: white !important;
   opacity: 1;
+}
+
+@media only screen and (max-width: 500px){
+  .CountrySlider .slick-list{
+    text-align: unset !important;
+  }
 }

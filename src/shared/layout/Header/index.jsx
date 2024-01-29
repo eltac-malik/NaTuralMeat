@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <div
       className={`font-PirateOne fixed top-0 left-0 right-0 z-50 text-white transition-all duration-300 ${
-        scrolled ? "bg-[#101010]" : "bg-transparent"
+        scrolled ? "bg-[#101010] header-css" : "bg-transparent"
       }`}
     >
       <div className="flex justify-between mx-36 my-7 items-center max-[970px]:mx-5">

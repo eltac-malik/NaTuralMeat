@@ -23,7 +23,7 @@ const Router = () => {
       <Header />
 
       <PrivateRouter />
-      {/* <Footer /> */}
+      <Footer />
     </Suspense>
   );
 };
