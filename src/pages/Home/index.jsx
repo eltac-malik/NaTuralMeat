@@ -17,6 +17,7 @@ const Home = () => {
   const handleClick = () => {
     setShowModal(true);
   };
+
   const handleClose = () => {
     setShowModal(false);
   };

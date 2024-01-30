@@ -59,9 +59,7 @@ const Footer = () => {
         </div>
       </div>
       <div className=" px-36 border-t border-white border-dotted py-8 flex justify-between max-[970px]:px-3 max-[970px]:flex-col">
-        <p className=" font-Mukta text-[14px]">
-          © 2022, Winta Template. All right reserved.
-        </p>
+        <p className=" font-Mukta text-[14px]">© 2024, NaTural website.</p>
         <p className=" font-Mukta text-[14px] max-[970px]:pt-5">
           Terms & Conditions
         </p>
