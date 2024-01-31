@@ -136,22 +136,24 @@ const About = () => {
                 </div>
               </div>
               <div className="text-center mt-[30px]">
-                <a className=" font-PirateOne text-[25px] inline-block py-[12px] px-[24px] border border-solid border-[#991b1f] m-auto  test-test">
+                <button
+                  target="_blanc"
+                  className="customButton  uppercase font-PirateOne text-[25px] inline-block py-[12px] px-[24px] border border-solid border-[#991b1f] m-auto  "
+                >
+                  {" "}
                   <span>+994 70 826-10-26</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="mx-32 my-32 max-[970px]:mx-3">
-          <h1 className="font-PirateOne text-white  text-[27px]">
+          <h1 className="font-PirateOne text-white  text-[27px] mb-4">
             Want to cook something tasty? Read our best recipes.
           </h1>
-          <button
-            className="px-[24px] py-[12px] bg-[#991b1fa8] text-white mt-6 hover:bg-[#991b1f]"
-            type="button"
-          >
-            Recipes Book
+          <button target="_blanc" className="customButton butn-dark ">
+            {" "}
+            <span>Recipes Book</span>
           </button>
         </div>
         <div className="  bg-[#101010] py-[90px] ">

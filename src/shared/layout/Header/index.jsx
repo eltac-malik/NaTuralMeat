@@ -8,7 +8,6 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isMenu, setIsMenu] = useState(false);
   const { pathname } = useLocation();
-  console.log({ pathname });
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -23,6 +22,9 @@ const Header = () => {
     setIsMenu((current) => !current);
   };
 
+  useEffect(() => {
+    setIsMenu(false);
+  }, [pathname]);
   return (
     <div
       className={`font-PirateOne fixed top-0 left-0 right-0 z-50 text-white transition-all duration-300 ${

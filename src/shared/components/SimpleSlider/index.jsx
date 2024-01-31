@@ -58,8 +58,12 @@ const SimpleSlider = () => {
                 <h1 className="text-[90px] font-PirateOne text-white max-[970px]:text-[40px] py-3 ">
                   STEAKHOUSE + BAR
                 </h1>
-                <button className=" btn shadow-[0_9px_0_rgb(0,0,0)] hover:shadow-[0_4px_0px_rgb(0,0,0)] text-white bg-[#991b1ff1] hover:bg-[#991b1fa8]  hover:translate-y-1 transition-all rounded font-[16px] uppercase  px-12 py-3    transform duration-300 ease-in-out">
-                  Buy Now
+                <button
+                  target="_blanc"
+                  className="customButton butn-dark uppercase"
+                >
+                  {" "}
+                  <span>Buy now</span>
                 </button>
               </div>
             </div>
@@ -78,8 +82,12 @@ const SimpleSlider = () => {
                 <h1 className="text-[90px] font-PirateOne text-white max-[970px]:text-[45px] ">
                   STEAKHOUSE + BAR
                 </h1>
-                <button className=" btn shadow-[0_9px_0_rgb(0,0,0)] hover:shadow-[0_4px_0px_rgb(0,0,0)] text-white bg-[#991b1ff1] hover:bg-[#991b1fa8]  hover:translate-y-1 transition-all rounded font-[16px] uppercase  px-12 py-3    transform duration-300 ease-in-out">
-                  Buy Now
+                <button
+                  target="_blanc"
+                  className="customButton butn-dark uppercase"
+                >
+                  {" "}
+                  <span>Download menu in PDF &nbsp;&nbsp;</span>
                 </button>
               </div>
             </div>
@@ -98,8 +106,12 @@ const SimpleSlider = () => {
                 <h1 className="text-[90px] font-PirateOne text-white max-[970px]:text-[45px] ">
                   STEAKHOUSE + BAR
                 </h1>
-                <button className=" btn shadow-[0_9px_0_rgb(0,0,0)] hover:shadow-[0_4px_0px_rgb(0,0,0)] text-white bg-[#991b1ff1] hover:bg-[#991b1fa8]  hover:translate-y-1 transition-all rounded font-[16px] uppercase  px-12 py-3    transform duration-300 ease-in-out">
-                  Buy Now
+                <button
+                  target="_blanc"
+                  className="customButton butn-dark uppercase"
+                >
+                  {" "}
+                  <span>Download menu in PDF &nbsp;&nbsp;</span>
                 </button>
               </div>
             </div>
@@ -118,8 +130,12 @@ const SimpleSlider = () => {
                 <h1 className="text-[90px] font-PirateOne text-white max-[970px]:text-[45px] ">
                   STEAKHOUSE + BAR
                 </h1>
-                <button className=" btn shadow-[0_9px_0_rgb(0,0,0)] hover:shadow-[0_4px_0px_rgb(0,0,0)] text-white bg-[#991b1ff1] hover:bg-[#991b1fa8]  hover:translate-y-1 transition-all rounded font-[16px] uppercase  px-12 py-3    transform duration-300 ease-in-out">
-                  Buy Now
+                <button
+                  target="_blanc"
+                  className="customButton butn-dark uppercase"
+                >
+                  {" "}
+                  <span>Download menu in PDF &nbsp;&nbsp;</span>
                 </button>
               </div>
             </div>

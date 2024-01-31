@@ -233,3 +233,123 @@ transition: 0.2s;
 .animate-slideInRight {
   animation: slideInRight 1s ease-out;
 }
+/* ======= Buttons ======= */
+.customButton {
+  font-weight: 400;
+  padding: 12px 24px;
+  background: transparent;
+  position: relative;
+  z-index: 3;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+  outline: none !important;
+  overflow: hidden;
+  border: none;
+  border: 1px solid #991b1f;
+}
+.customButton span {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.customButton:before,
+.customButton:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: #991b1f;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+  z-index: 1;
+  opacity: .4;
+}
+.customButton:after {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #991b1f;
+  opacity: 1;
+}
+.customButton:hover:before,
+.customButton:hover:after {
+  width: 100%;
+}
+.customButton:hover:after {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+.customButton:hover span {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+  color: #fff;
+}
+.customButton-dark {
+  border: 1px solid #991b1f;
+  background: #991b1f;
+  font-family: 'Mukta', sans-serif;
+  font-size: 15px;
+}
+.customButton-dark:hover {
+  border: 1px solid #991b1f;
+  background: transparent;
+}
+.customButton-dark:before,
+.customButton-dark:after {
+  background: #991b1f;
+}
+.customButton-dark:hover span {
+  color: #fff;
+}
+.customButton-dark span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.butn-dark {
+  border: 1px solid #991b1f;
+  background: #991b1f;
+  font-family: 'Mukta', sans-serif;
+  font-size: 15px;
+}
+.butn-dark:hover {
+  border: 1px solid #991b1f;
+  background: transparent;
+}
+.butn-dark:before,
+.butn-dark:after {
+  background: #991b1f;
+}
+.butn-dark:hover span {
+  color: #fff;
+}
+.butn-dark span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Mukta', sans-serif;
+}
+.lg-react-element{
+  display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 35px;
+    padding-inline: 144px;
+    padding-block: 100px;
+}
+@media only screen and (max-width: 900px){
+  .lg-react-element{
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    padding-inline: 20px !important;
+  }
+
+}
+@media only screen and (max-width: 980px){
+  .lg-react-element{
+    padding-inline: 20px !important;
+  }
+
+}
