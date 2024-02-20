@@ -4,26 +4,26 @@ export const HEAD_URL = [
   {
     id: 1,
     url: URLs.HOME_URL,
-    inner: "Home",
+    inner: "home",
   },
   {
     id: 2,
     url: URLs?.ABOUT_URL,
-    inner: "About",
+    inner: "about",
   },
   {
     id: 3,
     url: URLs.MENU_URL,
-    inner: "Menu",
+    inner: "menu",
   },
   {
     id: 4,
     url: URLs.GALLERY_URL,
-    inner: "Gallery",
+    inner: "gallery",
   },
   {
     id: 5,
     url: URLs.CONTACT_URL,
-    inner: "Contact",
+    inner: "contact",
   },
 ];

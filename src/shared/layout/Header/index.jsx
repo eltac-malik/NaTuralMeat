@@ -1,10 +1,15 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { HEAD_URL } from "./data";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useTranslation } from "react-i18next";
 import RenderIf from "src/shared/components/RenderIf";
+import { HEAD_URL } from "./data";
 
 const Header = () => {
+  const [language, setLanguage] = useState(
+    localStorage.getItem("lang") || "en"
+  );
+
   const [scrolled, setScrolled] = useState(false);
   const [isMenu, setIsMenu] = useState(false);
   const { pathname } = useLocation();
@@ -25,6 +30,16 @@ const Header = () => {
   useEffect(() => {
     setIsMenu(false);
   }, [pathname]);
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = async (e) => {
+    const lang = e.target.value;
+    await i18n.changeLanguage(lang);
+    localStorage.setItem("lang", lang);
+    setLanguage(lang); // Seçili dili güncelle
+  };
+
   return (
     <div
       className={`font-PirateOne fixed top-0 left-0 right-0 z-50 text-white transition-all duration-300 ${
@@ -48,10 +63,28 @@ const Header = () => {
                   }`}
                   key={item?.id}
                 >
-                  <Link to={item?.url}>{item?.inner}</Link>
+                  <Link to={item?.url}>{t(item.inner)}</Link>
                 </li>
               );
             })}
+            <li>
+              <select
+                value={language || "en"}
+                className="text-white bg-transparent text-[18px] rounded-sm border-zinc-500 border-[1px] poi"
+                aria-label="Default select example"
+                onChange={changeLanguage}
+              >
+                <option className="text-black " value="az">
+                  AZ
+                </option>
+                <option className="text-black" value="en">
+                  EN
+                </option>
+                <option className="text-black" value="ru">
+                  RU
+                </option>
+              </select>
+            </li>
           </ul>
           <div className=" hidden    max-[970px]:!block ">
             <button onClick={handlerMenu}>
