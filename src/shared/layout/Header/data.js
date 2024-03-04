@@ -26,4 +26,14 @@ export const HEAD_URL = [
     url: URLs.CONTACT_URL,
     inner: "contact",
   },
+  {
+    id: 5,
+    url: URLs.PARTNERS_URL,
+    inner: "partners",
+  },
+  {
+    id: 5,
+    url: URLs.CUSTOMERS_URL,
+    inner: "customers",
+  },
 ];

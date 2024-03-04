@@ -4,4 +4,6 @@ export const URLs = {
   MENU_URL: "/menu",
   GALLERY_URL: "/gallery",
   CONTACT_URL: "/contact",
+  PARTNERS_URL: "/partners",
+  CUSTOMERS_URL: "/customers",
 };

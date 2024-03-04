@@ -37,7 +37,7 @@ const Header = () => {
     const lang = e.target.value;
     await i18n.changeLanguage(lang);
     localStorage.setItem("lang", lang);
-    setLanguage(lang); // Seçili dili güncelle
+    setLanguage(lang);
   };
 
   return (
@@ -92,7 +92,7 @@ const Header = () => {
             </button>
             <RenderIf condition={isMenu}>
               <div
-                className={`absolute top-[117px] left-0 h-56 bg-[#1b1b1b] w-full  px-5 flex justify-center flex-col gap-3 shadow-lg shadow-bottom  `}
+                className={`absolute top-[117px] left-0 h-96 bg-[#1b1b1b] w-full  px-5 flex justify-center flex-col gap-3 shadow-lg shadow-bottom  `}
               >
                 {HEAD_URL?.map((item) => {
                   return (
@@ -102,10 +102,28 @@ const Header = () => {
                       }`}
                       key={item?.id}
                     >
-                      <Link to={item?.url}>{item?.inner}</Link>
+                      <Link to={item?.url}>{t(item.inner)}</Link>
                     </li>
                   );
                 })}
+                <li>
+                  <select
+                    value={language || "en"}
+                    className="text-white bg-transparent text-[18px] rounded-sm border-zinc-500 border-[1px] poi"
+                    aria-label="Default select example"
+                    onChange={changeLanguage}
+                  >
+                    <option className="text-black " value="az">
+                      AZ
+                    </option>
+                    <option className="text-black" value="en">
+                      EN
+                    </option>
+                    <option className="text-black" value="ru">
+                      RU
+                    </option>
+                  </select>
+                </li>
               </div>
             </RenderIf>
           </div>
