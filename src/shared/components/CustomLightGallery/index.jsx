@@ -7,7 +7,6 @@ import gallery5 from "./imgs/4.jpg";
 import gallery6 from "./imgs/5.jpg";
 import gallery8 from "./imgs/6.jpg";
 import galleryq3 from "./imgs/q3.jpg";
-import galleryq4 from "./imgs/q4.jpg";
 import galleryq5 from "./imgs/q5.jpg";
 import galleryq6 from "./imgs/q6.jpg";
 import galleryq7 from "./imgs/q7.jpg";
