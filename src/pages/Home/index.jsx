@@ -1,6 +1,9 @@
 import SimpleSlider from "src/shared/components/SimpleSlider";
-import Home1 from "src/assets/imgs/home2.jpg";
-import Home2 from "src/assets/imgs/home3.jpg";
+import Home1 from "./imgs/1.jpg";
+import Home2 from "./imgs/2.jpg";
+import Home3 from "./imgs/3.jpg";
+import Home4 from "./imgs/4.jpg";
+import Home5 from "./imgs/5.jpg";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import Menu from "./Menu";
 import { Modal } from "@mui/material";
@@ -72,7 +75,7 @@ const Home = () => {
             <div className="w-full overflow-hidden max-[970px]:col-span-2">
               <img
                 className="h-[200px] w-full duration-200 hover:scale-[1.08] hover:duration-200 object-cover	"
-                src={Home2}
+                src={Home3}
                 alt=""
               />
             </div>
@@ -85,7 +88,7 @@ const Home = () => {
           <Menu />
         </div>
         <div>
-          <div className="bg-[url('src/assets/imgs/banner.jpg')] bg-cover bg-center w-full bg-fixed h-96  flex   items-center relative 	 max-[970px]:!h-[880px]">
+          <div className="bg-[url('src/pages/Home/imgs/111.jpg')] bg-cover bg-center w-full bg-fixed h-96  flex   items-center relative 	 max-[970px]:!h-[880px]">
             <div className="ml-32 hover:scale-[1.2] duration-300 hover:duration-300		opacity-[.67] hover:opacity-[1] max-[970px]:absolute max-[970px]:top-4  max-[970px]:ml-3   ">
               <button
                 onClick={handleClick}

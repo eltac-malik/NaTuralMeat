@@ -1,8 +1,9 @@
-import Home1 from "src/assets/imgs/home2.jpg";
-import Home2 from "src/assets/imgs/home3.jpg";
-import About1 from "src/assets/imgs/about1.jpg";
-import About2 from "src/assets/imgs/about2.jpg";
-import About3 from "src/assets/imgs/about3.jpg";
+import Home1 from "./imgs/2.jpg";
+import Home2 from "./imgs/7.jpg";
+import Home3 from "./imgs/8.jpg";
+import About1 from "./imgs/11.jpg";
+import About2 from "./imgs/12.jpg";
+import About3 from "./imgs/13.jpg";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 // import Menu from "./Menu";
 import { Modal } from "@mui/material";
@@ -79,7 +80,7 @@ const About = () => {
             <div className="w-full overflow-hidden max-[970px]:col-span-2">
               <img
                 className="h-[200px] w-full duration-200 hover:scale-[1.08] hover:duration-200 object-cover	"
-                src={Home2}
+                src={Home3}
                 alt=""
               />
             </div>
@@ -92,7 +93,7 @@ const About = () => {
           {/* <Menu /> */}
         </div>
         <div>
-          <div className="bg-[url('src/assets/imgs/banner.jpg')] bg-cover bg-center w-full bg-fixed h-96  flex   items-center relative 	 max-[970px]:!h-[880px]">
+          <div className="bg-[url('src/pages/About/imgs/10.jpg')] bg-cover bg-center w-full bg-fixed h-96  flex   items-center relative 	 max-[970px]:!h-[880px]">
             <div className="ml-32 hover:scale-[1.2] duration-300 hover:duration-300		opacity-[.67] hover:opacity-[1] max-[970px]:absolute max-[970px]:top-4  max-[970px]:ml-3   ">
               <button
                 onClick={handleClick}
@@ -197,7 +198,7 @@ const About = () => {
             <div>
               <div className="h-[433px] w-full overflow-hidden">
                 <img
-                  className="w-full h-full object-fill duration-300  hover:scale-125 hover:duration-300"
+                  className="w-full h-full  duration-300  hover:scale-125 hover:duration-300 object-cover"
                   src={About3}
                   alt=""
                 />
@@ -210,7 +211,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[url('src/assets/imgs/banner.jpg')] bg-cover bg-center w-full bg-fixed h-96  flex   items-center ">
+        <div className="bg-[url('src/pages/About/imgs/14.jpg')] bg-cover bg-center w-full bg-fixed h-96  flex   items-center ">
           <CountrySlider />
         </div>
       </div>

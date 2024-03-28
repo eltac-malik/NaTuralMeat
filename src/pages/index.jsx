@@ -8,7 +8,7 @@ import AnimatedCursor from "react-animated-cursor";
 const Router = () => {
   return (
     <Suspense fallback={<CustomSpinner />}>
-      <AnimatedCursor
+      {/* <AnimatedCursor
         color="220, 90, 90"
         innerStyle={{
           backgroundColor: "red",
@@ -18,7 +18,7 @@ const Router = () => {
         outerStyle={{
           border: "3px solid red",
         }}
-      />
+      /> */}
 
       <Header />
 

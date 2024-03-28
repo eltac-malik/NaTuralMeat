@@ -1,5 +1,19 @@
-import Home1 from "src/assets/imgs/home2.jpg";
-import Home2 from "src/assets/imgs/home3.jpg";
+import Home1 from "./imgs/1.jpg";
+import Home2 from "./imgs/2.jpg";
+import Home3 from "./imgs/3.jpg";
+import Home4 from "./imgs/4.jpg";
+import Home5 from "./imgs/5.jpg";
+import Home6 from "./imgs/6.jpg";
+import Home7 from "./imgs/7.jpg";
+import Home8 from "./imgs/8.jpg";
+import Home9 from "./imgs/9.jpg";
+import Home10 from "./imgs/10.jpg";
+import Home11 from "./imgs/11.jpg";
+import Home12 from "./imgs/12.jpg";
+import Home13 from "./imgs/13.jpg";
+import Home14 from "./imgs/14.jpg";
+import Home15 from "./imgs/15.jpg";
+import Home16 from "./imgs/16.jpg";
 
 // import {
 //   PetsIcon,
@@ -36,28 +50,28 @@ export const menuMainsList = [
     inner: "Rusty`s Burger",
     price: "55$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home1,
+    img: Home3,
   },
   {
     id: 4,
     inner: "Rusty`s Burger",
     price: "12$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home4,
   },
   {
     id: 5,
     inner: "Rusty`s Burger",
     price: "12$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home5,
   },
   {
     id: 6,
     inner: "Rusty`s Burger",
     price: "12$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home6,
   },
 ];
 export const menuSaladsList = [
@@ -66,42 +80,42 @@ export const menuSaladsList = [
     inner: "Rusty`s Burger",
     price: "27$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home7,
   },
   {
     id: 2,
     inner: "Rusty`s Burger",
     price: "21$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home1,
+    img: Home8,
   },
   {
     id: 3,
     inner: "Rusty`s Burger",
     price: "55$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home9,
   },
   {
     id: 4,
     inner: "Rusty`s Burger",
     price: "12$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home10,
   },
   {
     id: 5,
     inner: "Rusty`s Burger",
     price: "12$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home11,
   },
   {
     id: 6,
     inner: "Rusty`s Burger",
     price: "12$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home12,
   },
 ];
 
@@ -111,28 +125,28 @@ export const menuWineList = [
     inner: "Rusty`s Burger",
     price: "27$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home1,
+    img: Home13,
   },
   {
     id: 2,
     inner: "Rusty`s Burger",
     price: "21$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home1,
+    img: Home14,
   },
   {
     id: 3,
     inner: "Rusty`s Burger",
     price: "55$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home15,
   },
   {
     id: 4,
     inner: "Rusty`s Burger",
     price: "12$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home16,
   },
   {
     id: 5,
@@ -146,7 +160,7 @@ export const menuWineList = [
     inner: "Rusty`s Burger",
     price: "12$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home1,
+    img: Home2,
   },
 ];
 
@@ -156,7 +170,7 @@ export const menuBreakfastList = [
     inner: "Rusty`s Burger",
     price: "27$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home1,
   },
   {
     id: 2,
@@ -170,28 +184,28 @@ export const menuBreakfastList = [
     inner: "Rusty`s Burger",
     price: "55$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home3,
   },
   {
     id: 4,
     inner: "Rusty`s Burger",
     price: "12$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home4,
   },
   {
     id: 5,
     inner: "Rusty`s Burger",
     price: "12$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home5,
   },
   {
     id: 6,
     inner: "Rusty`s Burger",
     price: "12$",
     description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy",
-    img: Home2,
+    img: Home6,
   },
 ];
 
